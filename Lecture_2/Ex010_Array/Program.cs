@@ -3,32 +3,32 @@ Console.Clear();
 
 // проверка на наличие символов в строке s, отличных от цифр. возвращает false, если строка пустая или
 // содержит символы - не цифры
-bool DigitsOnly(string s)
-{
-    // проверка на пустую строку    
-    if (s.Length == 0) return false;
-    // foreach - цикл для каждого из
-    foreach (char c in s)
-    {
-        if (c < '0' || c > '9')
-            return false;
-    }
-    return true;
-}
+// bool DigitsOnly(string s)
+// {
+//     // проверка на пустую строку    
+//     if (s.Length == 0) return false;
+//     // foreach - цикл для каждого из
+//     foreach (char c in s)
+//     {
+//         if (c < '0' || c > '9')
+//             return false;
+//     }
+//     return true;
+// }
 
 // ввод значения. запрашивает ввод, конвертирует в int32 и возвращает это число
-int GetData()
-{
-    bool testDigits = false;
-    string inputString = "";
-    while (!testDigits)
-    {
-        Console.Write("Введите значение: ");
-        inputString = Console.ReadLine();
-        testDigits = DigitsOnly(inputString);
-    }
-    return Convert.ToInt32(inputString);
-}
+// int GetData()
+// {
+//     bool testDigits = false;
+//     string inputString = "";
+//     while (!testDigits)
+//     {
+//         Console.Write("Введите значение: ");
+//         inputString = Console.ReadLine();
+//         testDigits = DigitsOnly(inputString);
+//     }
+//     return Convert.ToInt32(inputString);
+// }
 
 // поиск максимального значения из массива
 int Max(int[] array)

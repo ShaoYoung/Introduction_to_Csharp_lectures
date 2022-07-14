@@ -23,7 +23,7 @@ bool DigitsOnly(string s)
 int GetData()
 {
     bool testDigits = false;
-    string inputString = "";
+    string? inputString = "";
     while (!testDigits)
     {
         Console.Write("Введите значение: ");
